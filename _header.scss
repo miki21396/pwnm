@@ -1,6 +1,11 @@
-.header-links{
+.header-bar {
     display: flex;
-    li{
+}
+
+.header-links {
+    display: flex;
+
+    li {
         margin-left: 5px;
     }
 }
