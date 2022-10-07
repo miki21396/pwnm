@@ -1,1 +1,6 @@
-/*# sourceMappingURL=style.css.map */
+.header-links {
+  display: flex;
+}
+.header-links li {
+  margin-left: 5px;
+}/*# sourceMappingURL=style.css.map */
