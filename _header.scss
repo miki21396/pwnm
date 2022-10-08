@@ -1,37 +1,71 @@
 .header-bar {
+
+
     display: flex;
     background-color: transparent;
     justify-content: space-between;
-    margin: 25px;
-}
 
-.header-links {
-    display: flex;
+    .header-logo,
+    .header-links li,
+    img {
+        color: black;
+    }
 
-    li {
-        margin-left: 10px;
-        font-size: 13px;
+    .header-logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .header-right li,
+    img {
+        display: inline;
+        font-size: 17px;
+        margin: 5px;
+    }
+
+    .header-links img {
+        width: 20px;
     }
 }
 
-.header-logo {
-    font-weight: bold;
-}
-
 .top-content {
-    background-color: lightblue;
-    // background-image: url(./img/image.png);
-    width: 100%;
-    height: 700px;
+
+    background-image: url(../../img/image.png);
+    height: 900px;
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    .top-title,
+    .top-btns {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
 
     .top-title {
-        text-align: center;
+        font-size: 110px;
+        padding: 180px 40px 70px 40px;
+        font-family: 'Knewave', cursive;
+    }
+
+    .top-btns {
+        margin: 200px 100px;
+
+    }
+
+    .top-btns .button {
+        font-size: 20px;
+        border: solid 1px white;
+        border-radius: 5%;
+        padding: 10px 15px;
+        margin-right: 12px;
+        background: linear-gradient(#00d0ff, #25ffbf);
     }
 }
 
 #main-content {
 
-.artist-headliner{}
+    .artist-headliner {}
 
     .smalltitle1 {
         font-size: 10px;
