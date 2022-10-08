@@ -51,27 +51,6 @@
   background: linear-gradient(#00d0ff, #25ffbf);
 }
 
-#main-content .smalltitle1 {
-  font-size: 10px;
-}
-#main-content .title1 {
-  font-size: 30px;
-  font-weight: bold;
-}
-#main-content .artist-headliner-description {
-  background-color: lightblue;
-  width: 450px;
-  height: 200px;
-}
-#main-content .artist-headliner-jamila,
-#main-content .artist-headliner-Sandra,
-#main-content .artist-headliner-DJCrazyhead {
-  display: flex;
-}
-#main-content .artist-headliner-Sandra {
-  flex-direction: row-reverse;
-}
-
 #main-content {
   align-items: center;
   background: url(../../img/middle-cover.jpg) no-repeat;
@@ -82,4 +61,35 @@
 .artist-headliner-DJCrazyhead {
   align-items: center;
   justify-content: center;
+}
+
+.footer-wrapper {
+  background-image: url(../../img/xfooter-cover.jpg.pagespeed.ic.bUq1sfau2M.webp);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.footer-wrapper .footer-text {
+  color: white;
+  margin-top: 100px;
+}
+.footer-wrapper .footer-logo {
+  font-size: 80px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.footer-wrapper .footer-sub {
+  font-size: 20px;
+}
+.footer-wrapper .footer-links {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.footer-wrapper .footer-links img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  color: white;
+  margin: 13px 9px;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */

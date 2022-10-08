@@ -1,0 +1,38 @@
+
+.footer-wrapper {
+    background-image: url(../../img/xfooter-cover.jpg.pagespeed.ic.bUq1sfau2M.webp);
+    background-repeat: no-repeat;
+    text-align: center;
+    .footer-text {
+        color: white;
+        margin-top: 100px;
+    }
+
+    .footer-logo {
+        font-size: 80px;
+        font-weight: bold;
+        padding-top: 100px;
+    }
+
+    .footer-sub {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+
+        img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+        color: white;
+        margin: 13px 9px;
+        margin-bottom: 100px;
+
+        }
+    }
+
+
+}
