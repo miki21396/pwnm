@@ -1,21 +1,28 @@
 
 .footer-wrapper {
-    background-image: url(../../img/xfooter-cover.jpg.pagespeed.ic.bUq1sfau2M.webp);
+    margin: 0;
+    height: 700px;
+background-size: 100% ;
+    background-image: url(../../img/footer-img.jpg.jpg);
     background-repeat: no-repeat;
     text-align: center;
     .footer-text {
         color: white;
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     .footer-logo {
         font-size: 80px;
         font-weight: bold;
-        padding-top: 100px;
+        padding-top: 180px;
     }
 
     .footer-sub {
         font-size: 20px;
+        margin-top: 100px;
+    }
+    .copylight{
+    margin-top: 5px;
     }
 
     .footer-links {
@@ -26,13 +33,10 @@
         img {
             width: 20px;
             height: 20px;
+            font-weight: bold;
             filter: brightness(0) invert(1);
         color: white;
         margin: 13px 9px;
-        margin-bottom: 100px;
-
         }
     }
-
-
 }

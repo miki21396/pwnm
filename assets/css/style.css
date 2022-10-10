@@ -1,24 +1,30 @@
-.header-bar {
+.header {
+  position: relative;
+}
+.header .header-bar {
+  width: 100%;
   display: flex;
-  background-color: transparent;
   justify-content: space-between;
+  margin-top: 50px;
+  position: absolute;
+  top: 0;
 }
-.header-bar .header-logo,
-.header-bar .header-links li,
-.header-bar img {
-  color: black;
+.header .header-logo, .header .header-links li,
+.header img {
+  margin-left: 15px;
+  color: white;
 }
-.header-bar .header-logo {
+.header .header-logo {
   font-size: 25px;
   font-weight: bold;
 }
-.header-bar .header-right li,
-.header-bar img {
+.header .header-right li,
+.header img {
   display: inline;
   font-size: 17px;
   margin: 5px;
 }
-.header-bar .header-links img {
+.header .header-links img {
   width: 20px;
 }
 
@@ -26,7 +32,6 @@
   background-image: url(../../img/image.png);
   height: 900px;
   background-repeat: no-repeat;
-  z-index: 10;
 }
 .top-content .top-title,
 .top-content .top-btns {
@@ -64,21 +69,28 @@
 }
 
 .footer-wrapper {
-  background-image: url(../../img/xfooter-cover.jpg.pagespeed.ic.bUq1sfau2M.webp);
+  margin: 0;
+  height: 700px;
+  background-size: 100%;
+  background-image: url(../../img/footer-img.jpg.jpg);
   background-repeat: no-repeat;
   text-align: center;
 }
 .footer-wrapper .footer-text {
   color: white;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 .footer-wrapper .footer-logo {
   font-size: 80px;
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 180px;
 }
 .footer-wrapper .footer-sub {
   font-size: 20px;
+  margin-top: 100px;
+}
+.footer-wrapper .copylight {
+  margin-top: 5px;
 }
 .footer-wrapper .footer-links {
   display: flex;
@@ -88,8 +100,31 @@
 .footer-wrapper .footer-links img {
   width: 20px;
   height: 20px;
+  font-weight: bold;
   filter: brightness(0) invert(1);
   color: white;
   margin: 13px 9px;
-  margin-bottom: 100px;
+}
+
+.sub-content p {
+  color: black;
+  padding-left: 10px;
+}
+.sub-content .smalltitle1 {
+  margin-top: 100px;
+  font-size: 20px;
+}
+.sub-content .title1 {
+  font-size: 40px;
+}
+.sub-content .swiper-wrapper {
+  height: 300px;
+  margin: 75px 50px;
+}
+.sub-content .swiper-slide {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 200px;
 }/*# sourceMappingURL=style.css.map */

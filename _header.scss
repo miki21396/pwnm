@@ -1,17 +1,23 @@
+.header{
+    position: relative;
 .header-bar {
+    width: 100%;
     display: flex;
-    background-color: transparent;
     justify-content: space-between;
-
-    .header-logo,
-    .header-links li,
+    margin-top: 50px;
+    position: absolute;
+    top:0;
+}
+    .header-logo,.header-links li,
     img {
-        color: black;
+        margin-left:15px ;
+        color: white;
     }
 
     .header-logo {
         font-size: 25px;
         font-weight: bold;
+
     }
 
     .header-right li,
@@ -31,7 +37,6 @@
     background-image: url(../../img/image.png);
     height: 900px;
     background-repeat: no-repeat;
-    z-index: 10;
 
     .top-title,
     .top-btns {
@@ -44,7 +49,10 @@
         font-size: 110px;
         padding: 180px 40px 70px 40px;
         font-family: 'Knewave', cursive;
-    }
+        // background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
+    }    
 
     .top-btns {
         margin: 200px 100px;

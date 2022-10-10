@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- ナナミここから -->
-    <header>
+    <header class="header">
         <div class="header-bar">
             <div class="header-left">
                 <p class="header-logo">SUNFEST</p>
@@ -132,35 +134,60 @@
     <!-- ここまで -->
 
     <!-- ナナミここから -->
-    <div class="next-events">
+    <div class="sub-content">
         <p class="smalltitle1">JUST THE BEST</p>
         <p class="title1">Our Next Events</p>
-        <div class="event-slider">
-            <img src="./img/OurNextEvents/xnext-event-1.jpg.pagespeed.ic.tm289P5lou.jpg" alt="">
-            <img src="./img/OurNextEvents/xnext-event-2.jpg.pagespeed.ic.NtiKPruf-e.jpg" alt="">
-            <img src="./img/OurNextEvents/xnext-event-3.jpg.pagespeed.ic.FZIzV4FZ_4.jpg" alt="">
+
+        <div class="swipecontent">
+        <div class="swiper">
+            <!-- 全スライドをまとめるラッパー（必須） -->
+            <div class="swiper-wrapper">
+                <!-- 各スライド（必須） -->
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"><img src="./img/OurNextEvents/xnext-event-1.jpg.pagespeed.ic.tm289P5lou.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/OurNextEvents/xnext-event-2.jpg.pagespeed.ic.NtiKPruf-e.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/OurNextEvents/xnext-event-3.jpg.pagespeed.ic.FZIzV4FZ_4.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/OurNextEvents/xnext-event-1.jpg.pagespeed.ic.tm289P5lou.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/OurNextEvents/xnext-event-2.jpg.pagespeed.ic.NtiKPruf-e.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/OurNextEvents/xnext-event-3.jpg.pagespeed.ic.FZIzV4FZ_4.jpg"
+                        alt=""></div>
+            </div>
+            <!-- 前・次ボタン -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+
         </div>
-        <button></button>
+
+    </div>
     </div>
 
+    <!-- フッター -->
     <footer>
         <div class="footer-wrapper">
-        <div class="footer-text">
-            <p class="footer-logo">SUNFEST</p>
-            <p class="footer-sub">SAYHELLO@SUNFEST.COM</p>
-            <p class="copylight">Copyright C 2022 All rights reserved | This template is made with by Colorlib</p>
-            <ul class="footer-links">
-                <li class="footer-twitter"><img src="./img/icons/twitter.png" alt=""></li>
-                <li class="footer-pintarest"><img src="./img/icons/p.png" alt=""></li>
-                <li class="footer-facebook"><img src="./img/icons/facebook.png" alt=""></li>
-                <li class="footer-youtube"><img src="./img/icons/youtube.png" alt=""></li>
-            </ul>
+            <div class="footer-text">
+                <p class="footer-logo">SUNFEST</p>
+                <p class="footer-sub">SAYHELLO@SUNFEST.COM</p>
+                <p class="copylight">Copyright C 2022 All rights reserved | This template is made with by Colorlib</p>
+                <ul class="footer-links">
+                    <li class="footer-twitter"><img src="./img/icons/twitter.png" alt=""></li>
+                    <li class="footer-pintarest"><img src="./img/icons/p.png" alt=""></li>
+                    <li class="footer-facebook"><img src="./img/icons/facebook.png" alt=""></li>
+                    <li class="footer-youtube"><img src="./img/icons/youtube.png" alt=""></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </footer>
     <!-- ここまで -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <script src="./script.js"></script>
 </body>
 
