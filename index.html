@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./dist/aos.css">
+    <!-- <script src="./dist/aos.js" defer></script> -->
+
 </head>
 
 <body>
@@ -59,29 +62,31 @@
     </div>
     <!-- ここまで -->
 
-    <!-- ミキここから -->
-    <div id="main-content">
-        <div class="artist-headliner">
-            <p class="smalltitle1">JUST THE BEST</p>
-            <p class="title1">The Lineup Artists-Headliners</p>
-            <div class="artist-headliner-jamila">
-                <img src="./img/mainArtists/JamilaWilliams.jpg" alt="">
+      <!-- ミキここから -->
+      <div id="main-content">
+        <div class="artist-headliner delayScroll">
+            <div class="sub-content">
+                <p class="smalltitle1">JUST THE BEST</p>
+                <p class="title1">The Lineup Artists-Headliners</p>
+            </div>
+            <div class="artist-headliner-jamila box">
+                <img class="headlinerspic" src="./img/mainArtists/JamilaWilliams.jpg" alt="">
                 <div class="artist-headliner-description">
                     <p class="artist-name">Jamila Williams</p>
                     <p class="artist-des">Quisque at erat eu libero consequat tempus. Quisque mole stie convallis
                         tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
                 </div>
             </div>
-            <div class="artist-headliner-Sandra">
-                <img src="./img/mainArtists/Sandra.jpg" alt="">
+            <div class="artist-headliner-Sandra box">
+                <img class="headlinerspic" src="./img/mainArtists/Sandra.jpg" alt="">
                 <div class="artist-headliner-description">
                     <p class="artist-name">Sandra Superstar</p>
                     <p class="artist-des">Quisque at erat eu libero consequat tempus. Quisque mole stie convallis
                         tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
                 </div>
             </div>
-            <div class="artist-headliner-DJCrazyhead">
-                <img src="./img/mainArtists/DJCrazyhead.jpg" alt="">
+            <div class="artist-headliner-DJCrazyhead box">
+                <img class="headlinerspic" src="./img/mainArtists/DJCrazyhead.jpg" alt="">
                 <div class="artist-headliner-description">
                     <p class="artist-name">DJ Crazyhead</p>
                     <p class="artist-des">Quisque at erat eu libero consequat tempus. Quisque mole stie convallis
@@ -89,45 +94,48 @@
                 </div>
             </div>
         </div>
-
         <div class="complete-lineup">
-            <p class="smalltitle1">JUST THE BEST</p>
-            <p class="title1">The Complete Lineup</p>
-            <div class="complete-artists">
-                <div class="MiskaSmith">
-                    <img src="./img/TheCompleteLineup/MiskaSmith.jpg" alt="">
+            <div class="sub-content">
+                <p class="smalltitle1">JUST THE BEST</p>
+                <p class="title1">The Complete Lineup</p>
+            </div>
+            <div class="complete-artists delayScroll">
+                <div class="MiskaSmith box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/MiskaSmith.jpg" alt="">
                     <p class="complete-artist-name">Miska Smith</p>
                 </div>
-                <div class="HayleyDown">
-                    <img src="./img/TheCompleteLineup/HayleyDown.jpg" alt="">
+                <div class="HayleyDown box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/HayleyDown.jpg" alt="">
                     <p class="complete-artist-name">HayleyDown</p>
                 </div>
-                <div class="TheBandSong">
-                    <img src="./img/TheCompleteLineup/TheBandSong.jpg" alt="">
+                <div class="TheBandSong box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/TheBandSong.jpg" alt="">
                     <p class="complete-artist-name">The Band Song</p>
                 </div>
-                <div class="PinkMachine">
-                    <img src="./img/TheCompleteLineup/PinkMachine.jpg" alt="">
+                <div class="PinkMachine box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/PinkMachine.jpg" alt="">
                     <p class="complete-artist-name">Pink Machine</p>
                 </div>
-                <div class="BrasilBand">
-                    <img src="./img/TheCompleteLineup/BrasilBand.jpg" alt="">
+                <div class="BrasilBand box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/BrasilBand.jpg" alt="">
                     <p class="complete-artist-name">Brasil Band</p>
                 </div>
-                <div class="Mickey">
-                    <img src="./img/TheCompleteLineup/Mickey.jpg" alt="">
+                <div class="Mickey box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/Mickey.jpg" alt="">
                     <p class="complete-artist-name">Mickey</p>
                 </div>
-                <div class="DjGirl">
-                    <img src="./img/TheCompleteLineup/DjGirl.jpg" alt="">
+                <div class="DjGirl box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/DjGirl.jpg" alt="">
                     <p class="complete-artist-name">Dj Girl</p>
                 </div>
-                <div class="StanSmith">
-                    <img src="./img/TheCompleteLineup/StanSmith.jpg" alt="">
+                <div class="StanSmith box">
+                    <img class="completelineup-img" src="./img/TheCompleteLineup/StanSmith.jpg" alt="">
                     <p class="complete-artist-name">Stan Smith</p>
                 </div>
             </div>
-            <button href="">BUTTONsee all lineup</button>
+            <div class="btn">
+                <button class="lineupbtn" href="">see all lineup</button>
+            </div>
         </div>
     </div>
     <!-- ここまで -->
@@ -199,7 +207,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+<script src=""></script>
     <script src="./script.js"></script>
 </body>
 

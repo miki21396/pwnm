@@ -70,14 +70,135 @@
   align-items: center;
   background: url(../../img/middle-cover.jpg) no-repeat;
 }
+#main-content .lineupbtn {
+  justify-content: center;
+  font-size: 10px;
+  border: solid 1px white;
+  border-radius: 5%;
+  padding: 10px 15px;
+  background: linear-gradient(#00D0FF, #25FFBF);
+  color: white;
+}
 
 .artist-headliner-jamila,
 .artist-headliner-Sandra,
 .artist-headliner-DJCrazyhead {
   align-items: center;
-  justify-content: center;
+  position: relative;
+  display: flex;
+  margin: 50px 150px;
 }
 
+.delayScroll {
+  opacity: 1;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.artist-headliner-description {
+  background-color: rgba(255, 255, 255, 0.68);
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  right: 35%;
+  bottom: 45px;
+  -webkit-box-shadow: 8px 11px 20px 0px rgba(222, 222, 222, 0.4509803922);
+  box-shadow: 8px 11px 20px 0px rgba(222, 222, 222, 0.4509803922);
+}
+
+.artist-headliner-Sandra {
+  flex-direction: row-reverse;
+}
+.artist-headliner-Sandra .artist-headliner-description {
+  position: absolute;
+  left: 35%;
+}
+
+.headlinerspic {
+  width: 25%;
+}
+
+.artist-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.artist-des {
+  margin: 30px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+}
+
+.complete-lineup .complete-artists {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 180px 100px 0;
+  padding-left: 150px;
+}
+.complete-lineup .complete-artists .box {
+  text-align: center;
+  justify-content: center;
+}
+.complete-lineup .artists {
+  justify-content: center;
+}
+.complete-lineup .complete-artist-name {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+.complete-lineup .completelineup-img {
+  width: 70%;
+}
+
+.btn {
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #main-content {
+    flex-direction: column;
+  }
+  .artist-headliner-jamila,
+.artist-headliner-Sandra,
+.artist-headliner-DJCrazyhead {
+    margin: 0px 0px;
+    flex-direction: column;
+  }
+  .artist-headliner-Sandra {
+    flex-direction: row;
+  }
+  .headlinerspic {
+    max-width: 50%;
+    justify-content: center;
+  }
+  .artist-headliner-description {
+    position: unset;
+    left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .footer-wrapper {
   margin: 0;
   height: 600px;

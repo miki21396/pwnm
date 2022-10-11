@@ -1,12 +1,158 @@
-#main-content{
+#main-content {
     align-items: center;
     background: url(../../img/middle-cover.jpg) no-repeat;
+    // .smalltitle1 {
+    //     font-size: 10px;
+    //     color: rgb(115, 113, 113);
+    //     font-weight: 800;
+    // }
+    // .title1 {
+    //     font-size: 30px;
+    //     font-weight: bold;
+    // }
+    .lineupbtn {
+        justify-content: center;
+        font-size: 10px;
+        border: solid 1px white;
+        border-radius: 5%;
+        padding: 10px 15px;
+        background: linear-gradient(#00D0FF, #25FFBF);
+        color: white;
+    }
 }
-
 .artist-headliner-jamila,
 .artist-headliner-Sandra,
-.artist-headliner-DJCrazyhead
-{
+.artist-headliner-DJCrazyhead {
     align-items: center;
+    // justify-content: center;
+    position: relative;
+    // copy
+    display: flex;
+    margin: 50px 150px;
+}
+// // ふわアニメ
+// .fadeUpTrigger {
+//     opacity: 0;
+//     animation-name: fadeUpAnime;
+//     animation-duration: 3s;
+//     animation-fill-mode: forwards;
+// }
+// @keyframes fadeUpAnime {
+//     from {
+//         opacity: 0;
+//         transform: translateY(100px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+// アニメーション
+.delayScroll {
+    opacity: 1; //before0
+}
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 1; //before 0
+}
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.artist-headliner-description {
+    background-color: rgba(255, 255, 255, 0.68);
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    right: 35%;
+    bottom: 45px;
+    -webkit-box-shadow: 8px 11px 20px 0px #dedede73;
+    box-shadow: 8px 11px 20px 0px #dedede73;
+}
+.artist-headliner-Sandra {
+    flex-direction: row-reverse;
+    .artist-headliner-description {
+        position: absolute;
+        left: 35%;
+        // bottom: 30px;
+    }
+}
+.headlinerspic {
+    width: 25%;
+    // position: absolute;
+}
+.artist-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.artist-des {
+    margin: 30px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+// complete lineup
+.complete-lineup {
+    .complete-artists {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 180px 100px 0;
+        padding-left: 150px;
+.box{
+text-align: center;
+justify-content: center;
+}
+    }
+    .artists {
+        justify-content: center;
+    }
+    .complete-artist-name {
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+    }
+    .completelineup-img {
+        width: 70%;
+    }
+}
+.btn {
     justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+// レスポンシブここから
+@media screen and (max-width: 767px) {
+    #main-content {
+        flex-direction: column;
+    }
+    .artist-headliner-jamila,
+    .artist-headliner-Sandra,
+    .artist-headliner-DJCrazyhead {
+        margin: 0px 0px;
+        flex-direction: column;
+        // justify-content: center;
+    }
+    .artist-headliner-Sandra {
+        flex-direction: row;
+    }
+    .headlinerspic {
+        max-width: 50%;
+        justify-content: center;
+    }
+    .artist-headliner-description {
+        position: unset;
+        left: 0%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
