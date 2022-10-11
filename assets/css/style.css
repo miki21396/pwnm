@@ -67,8 +67,8 @@
 }
 
 #main-content {
+  background-color: #25FFBF;
   align-items: center;
-  background: url(../../img/middle-cover.jpg) no-repeat;
 }
 #main-content .lineupbtn {
   justify-content: center;
