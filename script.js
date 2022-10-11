@@ -15,20 +15,20 @@ var mySwiper = new Swiper(".swiper", {
     spaceBetween: 20
 });
 
-$(function(){
-  $(".swiper-slide").mouseover(function(){
-$(".slide-txt ").show();
-});
+// $(function(){
+//   $(".swiper-slide").mouseover(function(){
+// $(".slide-txt ").show();
+// });
 
 
-});
+// });
 
 
 // ticketbtn
-$(function(){
-$(".btn1").click,function(){
-$(this).animate()
-})
+// $(function(){
+// $(".btn1").click,function(){
+// $(this).animate()
+// })
 
 
-})
+// })
