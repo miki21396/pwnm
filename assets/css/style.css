@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   position: relative;
 }
@@ -106,15 +107,11 @@
   margin: 50px 150px;
 }
 
-.delayScroll {
-  opacity: 1;
-}
-
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  opacity: 1;
+  opacity: 0;
 }
 
 @keyframes fadeUpAnime {
@@ -127,6 +124,11 @@
     transform: translateY(0);
   }
 }
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger {
+  opacity: 0;
+}
+
 .artist-headliner-description {
   background-color: rgba(255, 255, 255, 0.68);
   width: 500px;
@@ -193,6 +195,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .sub-content .smalltitle1 {
+    font-size: 6px;
+  }
+  .title1 {
+    font-size: 12px;
+  }
   #main-content {
     flex-direction: column;
   }
@@ -202,18 +210,25 @@
     margin: 0px 0px;
     flex-direction: column;
   }
-  .artist-headliner-Sandra {
-    flex-direction: row;
+  .artist-headliner-Sandra .artist-headliner-description {
+    position: initial;
   }
   .headlinerspic {
-    max-width: 50%;
+    width: 90%;
     justify-content: center;
   }
   .artist-headliner-description {
-    position: unset;
+    position: initial;
     left: 0%;
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    height: 50%;
+  }
+  .complete-artists {
+    padding-left: 0px;
+    padding: 20px;
+    display: block;
   }
 }
 .footer-wrapper {
