@@ -8,10 +8,15 @@
     position: absolute;
     top:0;
 }
-    .header-logo,.header-links li,
+    .header-logo,
+    .header-links li,
     img {
         margin-left:15px ;
         color: white;
+        &:hover{
+            color:#00d0ff ;
+        opacity: 0.7;
+        }
     }
 
     .header-logo {
@@ -66,6 +71,11 @@
         padding: 10px 15px;
         margin-right: 12px;
         background: linear-gradient(#00d0ff, #25ffbf);
+    
+        &:hover{
+        box-shadow: 10px 10px 7px  yellow;
+        // transform:translate(10px, 7px) ;
+        }
     }
 }
 

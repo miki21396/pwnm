@@ -9,10 +9,17 @@
   position: absolute;
   top: 0;
 }
-.header .header-logo, .header .header-links li,
+.header .header-logo,
+.header .header-links li,
 .header img {
   margin-left: 15px;
   color: white;
+}
+.header .header-logo:hover,
+.header .header-links li:hover,
+.header img:hover {
+  color: #00d0ff;
+  opacity: 0.7;
 }
 .header .header-logo {
   font-size: 25px;
@@ -55,6 +62,9 @@
   margin-right: 12px;
   background: linear-gradient(#00d0ff, #25ffbf);
 }
+.top-content .top-btns .button:hover {
+  box-shadow: 10px 10px 7px yellow;
+}
 
 #main-content {
   align-items: center;
@@ -70,7 +80,7 @@
 
 .footer-wrapper {
   margin: 0;
-  height: 700px;
+  height: 600px;
   background-size: 100%;
   background-image: url(../../img/footer-img.jpg.jpg);
   background-repeat: no-repeat;
@@ -81,13 +91,13 @@
   margin-top: 130px;
 }
 .footer-wrapper .footer-logo {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bold;
-  padding-top: 180px;
+  padding-top: 210px;
 }
 .footer-wrapper .footer-sub {
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 .footer-wrapper .copylight {
   margin-top: 5px;
@@ -108,7 +118,7 @@
 
 .sub-content p {
   color: black;
-  padding-left: 10px;
+  padding-left: 80px;
 }
 .sub-content .smalltitle1 {
   margin-top: 100px;
@@ -116,15 +126,12 @@
 }
 .sub-content .title1 {
   font-size: 40px;
+  font-weight: bold;
+  display: inline;
+  border-bottom: 3px solid black;
 }
-.sub-content .swiper-wrapper {
+.sub-content .swiper-wrapper, .sub-content a .slide-txt {
   height: 300px;
+  width: 400px;
   margin: 75px 50px;
-}
-.sub-content .swiper-slide {
-  width: 100%;
-  height: 100%;
-  font-size: 24px;
-  text-align: center;
-  line-height: 200px;
 }/*# sourceMappingURL=style.css.map */

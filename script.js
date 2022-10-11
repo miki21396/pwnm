@@ -1,3 +1,4 @@
+// スライド部分
 var mySwiper = new Swiper(".swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
@@ -9,9 +10,25 @@ var mySwiper = new Swiper(".swiper", {
         type: 'bullets',
         clickable: true
     },
-
     loop: true,
     slidesPerView: 3,
     spaceBetween: 20
+});
+
+$(function(){
+  $(".swiper-slide").mouseover(function(){
+$(".slide-txt ").show();
+});
+
 
 });
+
+
+// ticketbtn
+$(function(){
+$(".btn1").click,function(){
+$(this).animate()
+})
+
+
+})
