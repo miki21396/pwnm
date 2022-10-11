@@ -1,21 +1,23 @@
-.header{
+.header {
     position: relative;
-.header-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    position: absolute;
-    top:0;
+
+    .header-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        position: absolute;
+        top: 0;
 }
     .header-logo,
     .header-links li,
     img {
-        margin-left:15px ;
+        margin-left: 15px;
         color: white;
-        &:hover{
-            color:#00d0ff ;
-        opacity: 0.7;
+
+        &:hover {
+            color: #00d0ff;
+            opacity: 0.7;
         }
     }
 
@@ -57,7 +59,7 @@
         // background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
         // background-clip: text;
         // -webkit-text-fill-color: transparent;
-    }    
+    }
 
     .top-btns {
         margin: 200px 100px;
@@ -71,42 +73,30 @@
         padding: 10px 15px;
         margin-right: 12px;
         background: linear-gradient(#00d0ff, #25ffbf);
-    
-        &:hover{
-        box-shadow: 10px 10px 7px  yellow;
-        // transform:translate(10px, 7px) ;
+
+        &:hover {
+            box-shadow: 10px 10px 7px yellow;
+            // transform:translate(10px, 7px) ;
         }
     }
 }
 
-// #main-content {
+$sp:767px;
+@media screen and (max-width: $sp) {
+    .header-bar{
+    display: flex;
+    flex-direction: column;
+    }
+    .header-logo  {
+        font-size: 15px;
+    }
+    .header-links li{
+    font-size: 5px;
+    width: 100%;
+    }
 
-//     .artist-headliner {}
-
-//     .smalltitle1 {
-//         font-size: 10px;
-//     }
-
-//     .title1 {
-//         font-size: 30px;
-//         font-weight: bold;
-//     }
-
-
-//     .artist-headliner-description {
-//         background-color: lightblue;
-//         width: 450px;
-//         height: 200px;
-//     }
-
-//     .artist-headliner-jamila,
-//     .artist-headliner-Sandra,
-//     .artist-headliner-DJCrazyhead {
-//         display: flex;
-//     }
-
-//     .artist-headliner-Sandra {
-//         flex-direction: row-reverse;
-//     }
-
-// }
+    .top-btns .button{
+width: 25px;
+height: 20px;
+    }
+}
